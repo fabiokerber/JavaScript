@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+function calculaIMC(){
+    imc = (peso / (altura * altura));
+}
+
+//----------------------------------------
+
+//declaracao de variaveis gerais
+var pesoFabio = 71;
+var alturaFabio = 1.74;
+
+var imcFabio = (pesoFabio / (alturaFabio * alturaFabio));
+
+var pesoAmigo = 89;
+var alturaAmigo = 1.62;
+
+var imcAmigo = (pesoAmigo / (alturaAmigo * alturaAmigo));
+
+
+//----------------------------------------
+
+exibeNaTela("O IMC do Fabio é " + Math.round(imcFabio) + ".");
+exibeNaTela("O IMC do meu Amigo é " + Math.round(imcAmigo) + ".");
+
+//IMC Daiane
+peso = (60);
+altura = (1.70);
+calculaIMC();
+exibeNaTela("O IMC da Daiane é " + Math.round(imc) + ".");
+
+</script>
