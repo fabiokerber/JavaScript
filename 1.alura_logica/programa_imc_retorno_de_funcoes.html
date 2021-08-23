@@ -13,11 +13,8 @@ function exibeNaTela(frase) {
 } 
 
 function calculaIMC(altura, peso) {
-    imc = peso / (altura * altura);
-}
-
-function somaDoisNumeros(numero1, numero2) {
-        exibeNaTela("A soma de 20 + 30 é " + (numero1 + numero2) + ".");
+    var imc = peso / (altura * altura);
+    return imc; //este caso a function já sabe que ao calcular o imc ja retorna o resultado para a variavel imc
 }
 
 //----------------------------------------
@@ -25,8 +22,14 @@ function somaDoisNumeros(numero1, numero2) {
 //IMC Fabio
 //peso 71
 //altura 1.73
-calculaIMC(1.73, 71);
-exibeNaTela("O IMC de Fabio é " + Math.round(imc) + ".");
+var imcFabio = calculaIMC(1.73, 71);
 
-somaDoisNumeros(20, 30);
+//IMC Daii
+//peso 60
+//altura 1.71
+var imcDaii = calculaIMC(1.71, 60);
+
+exibeNaTela(imcFabio)
+exibeNaTela(imcDaii)
+
 </script>
