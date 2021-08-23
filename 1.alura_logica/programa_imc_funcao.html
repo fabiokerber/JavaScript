@@ -13,7 +13,11 @@ function exibeNaTela(frase) {
 } 
 
 function calculaIMC(){
-    imc = (peso / (altura * altura));
+    var imc = (peso / (altura * altura));
+}
+
+function calculaIMCa(pesoa, alturaa){
+    var imca = (pesoa / (alturaa * alturaa));
 }
 
 //----------------------------------------
@@ -34,11 +38,5 @@ var imcAmigo = (pesoAmigo / (alturaAmigo * alturaAmigo));
 
 exibeNaTela("O IMC do Fabio é " + Math.round(imcFabio) + ".");
 exibeNaTela("O IMC do meu Amigo é " + Math.round(imcAmigo) + ".");
-
-//IMC Daiane
-peso = (60);
-altura = (1.70);
-calculaIMC();
-exibeNaTela("O IMC da Daiane é " + Math.round(imc) + ".");
 
 </script>
