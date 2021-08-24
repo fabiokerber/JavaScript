@@ -17,6 +17,10 @@ function calculaIMC(altura, peso) {
     return imc; //este caso a function já sabe que ao calcular o imc ja retorna o resultado para a variavel imc
 }
 
+function outroExemplo(altura, peso) {
+    return imc = peso / (altura * altura);
+}
+
 //----------------------------------------
 
 //IMC Fabio
@@ -31,5 +35,8 @@ var imcDaii = calculaIMC(1.71, 60);
 
 exibeNaTela(imcFabio)
 exibeNaTela(imcDaii)
+
+var imcNada= calculaIMC(3.60, 60);
+exibeNaTela(imcNada)
 
 </script>
