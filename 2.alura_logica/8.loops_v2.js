@@ -10,8 +10,8 @@ const listaDeDestinos = new Array(
 let podeComprar = false;
 const idadeComprador = 10;
 const estaAcompanhado = true;
-let temPassagemComprada = false;
-const destino = "Rio de Janeiro";
+let destinoExiste = false;
+const destino = "Aracaju";
 let contador = 0;
 
 console.log("Destinos possíveis:");
@@ -24,16 +24,18 @@ if (podeComprar = (idadeComprador >= 18 || estaAcompanhado == true));
 
 
 if (podeComprar == true){ //Permissão de comprar ser maior de idade e estar acompanhado
-    while (contador < 4) { //4 tamanho da listaDeDestinos
+    while (contador <= 4) { //4 tamanho da listaDeDestinos
         if (listaDeDestinos[contador] == destino){ //condição abaixo se o valor da variavel destino é igual à algum item da lista.
             console.log(`\n Destino ${destino} existe.`);
+            destinoExiste = true;
             break;
         } else {
-            console.log(`\n O destino ${destino} não existe.`);
+            console.log(`A passagem não deverá ser vendida devido à inexistência do destino.`);
         }
         contador ++;
     }
 } else {
-    console.log(`A passagem não deverá ser vendida devido à restrições.`);
+    console.log(`A passagem não deverá ser vendida devido à restrições de idade ou estar acompanhado.`);
 }
+
 
